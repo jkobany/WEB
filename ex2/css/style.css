@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, body, main, footer, nav, aside, section, div
+{
+    display: block;
+    background-color: #171932;
+}
+/* header+logo for both pages*/
+header
+{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+#logo {
+    background-image: url("../images/Logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    margin-left: 16px;
+    text-decoration: none;
+    
+}
+
+#logo span{
+    margin-left: 80px;
+    margin-top: 20px;
+    font-family: Carter One;
+    font-style: normal;
+    font-weight: normal;
+    align-items: center;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+}
+
+#CoverPhoto image{
+    margin-left: 0px;
+    margin-top: 36px;
+    mix-blend-mode: normal;
+}
+
+/*NewYork and USA for the first page*/
+#NewYork{
+    margin-left: 16px;
+    margin-top: 11px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;    
+}
+#usa{
+    margin-left: 18px;
+    margin-top: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color : white;
+}
+
+/*Cards sec*/
+.Cards{
+    background-color: #9B51E0;
+    display: inline-block;
+    box-shadow: 0px 2px 7px rgba(255, 255, 255, 0.3);
+    margin-left: 16px;
+    border-radius: 5px;
+    margin-top: 18px;
+    margin-bottom: 69px;
+}
+
+.MountainP{
+    width: 265px;
+    border-radius: 5px;
+    display: block;
+    padding:16px 0;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.MountainP span{
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 10px;
+
+}
+
+#IRocket{
+    background: url("../images/Rocket.png") no-repeat;
+    width: 13px;
+    height: 17.5px;
+    margin-left: 19px;
+}
+
+#IHouse{
+    background: url("../images/JKisinthehouse.png")no-repeat;
+    width: 19px;
+    height: 19px;
+    margin-left: 10px;
+}
+
+#ICloud{
+    background: url("../images/Cloudio.png")no-repeat;
+    width: 31px;
+    height: 19px;
+    margin-left: 10px;
+}
+
+#IGal{
+    background: url("../images/GalGadot.png")no-repeat;
+    width: 19px;
+    height: 19px;
+    margin-left: 10px;
+
+}
+/*FOTTER*/
+footer{
+    width: 100%;
+    height: 48px;
+    background-color: #9B51E0;
+    margin-left: -2px;
+    margin-bottom: 0;
+}
+
+.footer-social-icons-section{
+    width: 120px;
+    height: 24px;
+    opacity: 0.4;
+    margin: 12px 16px;
+    background-color:  #9B51E0 ;
+    background: none , none;  
+    margin-bottom: none;
+
+}
+
+#footer-social-icons-section span
+{
+  margin-left: 20px;
+  background-color: #9B51E0;
+  color : #ffffff;
+  opacity: 0.4;
+  display: inline-block;
+}
+
+footer #facebook{
+    background: url("../images/Facebook.png") no-repeat;
+    width: 24px;
+    height: 47px;
+    display: inline-block;
+}
+
+footer #Twitter{
+    background: url("../images/Twitter.png") no-repeat;
+    width: 24px;
+    height: 47px;
+    display: inline-block;
+}
+
+footer #Linkdin{
+    background: url("../images/Linkedin.png") no-repeat;
+    width: 24px;
+    height: 47px;
+    display: inline-block;
+
+}
+footer #Google{
+    background: url("../images/Google.png") no-repeat;
+    width: 24px;
+    height: 47px;
+    display: inline-block;
+
+}
+
+#Up-Photos-Section{
+    margin-left: 17px;
+    margin-bottom: 30px;
+}
+
+#Up-Photos-Section img{
+    margin-right: 20px;
+}
+.Smallpic{
+    margin-bottom: 45px;
+}
+/*NAV*/
+section NAV a 
+{
+    color:white;
+    text-decoration: none;
+}
+section NAV  a:hover
+{
+	color:yellow;
+}
+#NAV{
+    width: 664px;
+    height: 33px;
+    margin-left: 17px;
+    margin-top: 23px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: white;
+}
+
+/*NewYork and USA for the sec page*/
+#NewYorkP2{
+    margin-left: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+}
+#usaP2{
+    margin-left: 16px;
+    margin-top: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color : white;
+}
+
+/* First section with 3 pics aside*/
+#Section1{
+    margin-top: 50px;
+    color: white;
+}
+#Section1 p{
+    width: 367px;
+    margin-left: 17px;
+    margin-bottom: 15px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+ol{
+    list-style: none;
+    padding-left: 16px;
+}
+
+ol li {
+    background: url("../images/Item.png") no-repeat left center;
+    background-size: 48px;
+    height: 48px;
+    width: 100%;
+    height: 48px;
+    padding: 4px;
+    
+}
+
+ol li span {
+    padding-top: 16px;
+    font-family: Open Sans;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin-left: 64px;
+}
+/*rest of the sections*/
+#MainSections{
+    margin-top: 45px;
+    color: white;
+    font-family: Open Sans;
+    font-style: normal;
+}
+
+#MainSections span{
+    margin-left: 16px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#MainSections p{
+    width: 367px;
+    margin-bottom: 71px;
+    margin-left: 17px;
+    font-size: 14px;
+}
