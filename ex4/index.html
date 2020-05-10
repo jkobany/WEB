@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jonatna Kobany Form</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <form action="http://html5-book.co.il/teach/forms/get_form2.php" method = "get">
+            <label> Name:
+                <input type = "text" name = "fullName" placeholder="full name">
+            </label><br>
+
+            <label>Password:
+                <input type = "password" name = "pass">
+            </label><br>
+
+            
+            <label>E-mail:
+                <input type = "email" name = "mail">
+            </label><br>
+
+            <label>url:
+                <input type = "url" name = "website">
+            </label><br>
+
+            <label>Phone:
+                <input type = "tel" name = "phone">
+            </label><br>
+
+            <label>E-mail:
+                <input type = "email" name = "mail">
+            </label><br>
+
+            <label>Coffee:
+                <input type = "number" name = "mail">
+            </label><br>
+
+            <label>Coffee:
+                <input type = "number" name = "coffee">
+            </label><br>
+
+            <label>Temperature:
+                <input type = "range" name = "temper">
+            </label><br>
+
+            
+            <label>Adress:
+                <textarea name= "address" rows = "2" cols = "30"></textarea>
+            </label><br>
+
+            <span>Interests:</span>
+			<label>Reading Books<input type="checkbox" name="interests[]" value="Reading Books"></label>
+			<label>Children<input type="checkbox" name="interests[]" value="children"></label>
+			<label>Sleeping<input type="checkbox" name="interests[]" value="Sleeping"></label>
+			<label>Studying<input type="checkbox" name="interests[]" value="Studying"></label>
+			<label>Cleaning<input type="checkbox" name="interests[]" value="Cleaning"></label>
+            <br>
+
+            <span>Gender:</span>
+			<label>Male<input type="radio" name="Gender" value="Male" checked = "true"></label>
+			<label>Femalle<input type="radio" name="Gender" value="Female"></label>
+            <br>
+
+            <select name = "age">
+                <option value ="10">10</option>
+                <option value ="20">20</option>
+                <option value ="30">30</option>
+                <option value ="40">40</option>
+                <option value ="50">50</option>
+
+            </select>
+
+
+            
+            <input type = "submit" value = "Send">
+
+
+    </form>
+        <script>
+            document.getElementById("test").onclick = function{
+
+
+                return false;
+            }
+        </script>
+    </body>
+    <footer></footer>
+</html>

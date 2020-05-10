@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, body, main, footer, nav, aside, section, div{
+    display: block;
+}
+
+body{
+    background-image: url("../images/aside.JPG");
+    background-attachment:fixed;
+    background-color: red;
+
+}
+#wrapper{
+    min-height: 935px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: red;
+
+}
+
+header{
+    height: 100px;
+    background-color: rgb(255, 94, 0);
+    padding-top: 1px;
+    
+}
+
+header a {
+    background-image: url("../images/Item.png");
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+main{
+    position: relative;
+}
+#Box1{
+    top: 88px;
+    left: 23px;
+    height: 301px;
+    width: 177px;
+    background-color: rgb(255, 251, 0);
+    border: 2px solid black;
+    position: absolute;
+}
+#Box2{
+    top: 20px;
+    height: 288px;
+    width: 413px;
+    left: 353px;
+    background-color: rgb(21, 255, 0);
+    border: 2px solid black;
+    position: absolute;
+}
+
+#Box3{
+    height: 301px;
+    width: 170px;
+    top: 448px;
+    left: 282px  ;
+    background-color: rgb(0, 68, 255);
+    border: 2px solid black;
+    position: absolute;
+}
+
+#AsideFirstPage{
+    position: relative;
+    left: 810px;
+    width: 187px;
+    height: 831px;
+    border: 2px solid black;
+}
+
+#AsideFirstPage ul{
+    list-style: none;
+}
+
+#AsideFirstPage ul li{
+    margin-top: 110px;
+    font-size: 32px;
+}
+
+ul li a:first-child:hover
+{
+    
+    color:rgb(0, 225, 255);
+}
+
+footer{
+    width: 100%;
+    height: 66px;
+    background-color: gray;
+    margin-bottom: 0;
+}
+
+nav{
+    position: relative;
+    height: 184px;
+    width: 996px;
+    border: 2px solid black;
+}
+
+nav ul{
+    margin-top:40px;
+    margin-left: 185px;
+    list-style: none;
+    font-size: 32px;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 80px;
+}
+
+#Box4{
+    top: 67px;
+    left: 630px;
+    height: 87px;
+    width: 123px;
+    background-color: rgb(255, 251, 0);
+    border: 2px solid black;
+    position: absolute;
+}
+
+#Box5{
+    top: 67px;
+    left: 792px;
+    height: 87px;
+    width: 123px;
+    background-color: rgb(255, 251, 0);
+    border: 2px solid black;
+    position: absolute;
+}
+#Box6{
+    position: absolute;
+    top: 236px;
+    left: 502px;
+    height: 288px;
+    width: 413px;
+    border: 2px solid black;
+    background-color: rgb(17, 0, 255);
+}
+
+#Box7{
+    position: absolute;
+    top: 412px;
+    left: 218px;
+    height: 112px;
+    width: 268px;
+    border: 2px solid black;
+    background-color: rgb(0, 195, 255);
+
+}
+
+#SecAside{
+    position: absolute;
+    width: 187px;
+    height: 645px;
+    top:287px;
+    border: 2px solid black;
+    list-style: none;
+}
+#secFoot{
+    position: fixed;
+}
+#test{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 650px;
+    background-color: white;
+}
+
+#test > article{
+    background-color: white;
+    height: 315px;
+    width: 203px;
+    border: 0.5px solid black;
+    margin-left: 87px;
+    margin-top: 48px;
+    color: white;
+    font-size: 330px;
+    text-align: center;
+}
+button{
+    float: left;
+}
+
+
+@viewport
+{
+    width: 480px;
+    zoom: 1;
+}
+
+@media only screen and(max-width:480px)
+{
+    #test{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 650px;
+        background-color: white;
+    }
+    
+    #test > article{
+        background-color: white;
+        height: 315px;
+        width: 203px;
+        border: 0.5px solid black;
+        margin-left: 87px;
+        margin-top: 48px;
+        color: white;
+        font-size: 330px;
+        text-align: center;
+    }
+}
