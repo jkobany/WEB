@@ -2,21 +2,24 @@
 <html>
     <head>
         <title>Jonatna Kobany Form</title>
-        <link rel="stylesheet" href="css/style.css">
+        <script src="includes/scripts.js"></script>
     </head>
     <body>
-        <form action="http://html5-book.co.il/teach/forms/get_form2.php" method = "get">
+        <form id = "jonatan" name = "jonatan" action="http://html5-book.co.il/teach/forms/get_form2.php" method = "get" >
             <label> Name:
-                <input type = "text" name = "fullName" placeholder="full name">
+                <input type = "text" name = "fullName" placeholder="full name" pattern="[A-Za-z\s]+.{3,}"  title="Fist name and Last name" required>
             </label><br>
 
             <label>Password:
-                <input type = "password" name = "pass">
+                <input type = "password" name = "pass" pattern="[a-zA-Z0-9].{8,}" title=" Your password should be at least 8 charecters that includes
+                1. English letters
+                2. Charecters(symbol)
+                3. Number" required>
             </label><br>
 
             
             <label>E-mail:
-                <input type = "email" name = "mail">
+                <input type = "email" name = "mail" >
             </label><br>
 
             <label>url:
@@ -24,15 +27,11 @@
             </label><br>
 
             <label>Phone:
-                <input type = "tel" name = "phone">
+                <input type = "tel" name = "phone" pattern="[0-9]{9,10}" title="Invalid phone number">
             </label><br>
 
             <label>E-mail:
                 <input type = "email" name = "mail">
-            </label><br>
-
-            <label>Coffee:
-                <input type = "number" name = "mail">
             </label><br>
 
             <label>Coffee:
@@ -60,29 +59,28 @@
 			<label>Male<input type="radio" name="Gender" value="Male" checked = "true"></label>
 			<label>Femalle<input type="radio" name="Gender" value="Female"></label>
             <br>
-
-            <select name = "age">
-                <option value ="10">10</option>
-                <option value ="20">20</option>
-                <option value ="30">30</option>
-                <option value ="40">40</option>
-                <option value ="50">50</option>
-
-            </select>
+            
+            <input name = "age" type="number" min="10" max="20" value="10">
 
 
             
-            <input type = "submit" value = "Send">
+            <input name = "submit" type = "submit" value = "Send" >
 
+<script>
+        (initliaze());
+        jQuery(function ($) {
+    //form submit handler
+    $('#jonatan').submit(function (e) {
+        //check atleat 1 checkbox is checked
+        if (!$('.interests[]').is(':checked')) {
+            //prevent the default form submit if it is not checked
+            e.preventDefault();
+        }
+    })
+})
+</script>
 
     </form>
-        <script>
-            document.getElementById("test").onclick = function{
-
-
-                return false;
-            }
-        </script>
     </body>
     <footer></footer>
 </html>

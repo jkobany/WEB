@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header, body, main, footer, nav, aside, section, div{
+  display: block;
+}
+
+header{
+  height: 100px;
+  background-color: white;
+  position: relative;
+  border: 2px solid black;
+  width: 100%;
+}
+
+#eye{
+  background-image: url("../images/eye.png");
+  background-repeat: no-repeat;
+  display:flex;
+  width:31px;
+  height: 31px;
+  position: absolute;
+  left: 200px ;
+  top: 40px;
+}
+
+#speaker{
+  background-image: url("../images/speaker.jpg");
+  background-repeat: no-repeat;
+  display:flex;
+  width: 50px;
+  height: 40px;
+  left: 250px;
+  top: 30px;
+  position: absolute;
+}
+
+#logo{
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  display: flex;
+  height: 90px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#ring{
+  background-image: url("../images/bell.png");
+  background-repeat: no-repeat;
+  display: flex;
+  width: 40px;
+  height: 45px;
+  top: 30px;
+  right: 300px;
+  position: absolute;
+}
+
+#face{
+  background-image: url("../images/user.jpeg");
+  background-repeat: no-repeat;
+  display: flex;
+  width: 40px;
+  height: 45px;
+  top: 40px;
+  right: 240px;
+  position: absolute;
+}
+
+/*page 1*/
+
+#headerOne{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+	position: relative;
+}
+
+.main {
+	position: relative;
+	border: 2px solid black;
+	height: 25px;
+	background: rgb(255, 255, 255);
+	width: 190px;
+	border-radius: 50px;
+	padding-left: 31px;
+	padding-right: 11px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 13px;
+	color: #555;
+}
+
+.main:focus {
+	outline: none;
+}
+
+.searchicon {
+	position: absolute;
+	height: 12px;
+	width: 12px;
+	background: transparent;
+	border: 3px solid black;
+	left: 10px;
+	top: 8px;
+	border-radius: 100%;
+}
+
+.searchicon:after {
+	content: '';
+	position: absolute;
+	background: black;
+	height: 6px;
+	width: 3px;
+	bottom: -5px;
+	right: -3px;
+	transform: rotate(-45deg);
+}
+
+.microphone {
+	position: absolute;
+	height: 24px;
+	width: 24px;
+	background: #FF5252;
+	right: 12px;
+	top: 6px;
+	border-radius: 100%;
+	box-shadow: 0px 1px 2px 0px #555;
+}
+
+.microphone:after {
+	content: '';
+	position: absolute;
+	background: #c70000;
+	height: 12px;
+	width: 8px;
+	border-radius: 10px;
+	left: 8px;
+	top: 3px;
+}
+
+.microphone:before {
+	content: '';
+	position: absolute;
+	border-bottom: 2px solid #c70000;
+	height: 10px;
+	width: 10px;
+	border-radius: 100%;
+	top: 6px;
+	left: 7px;
+}
+
+.mic-stand {
+	position: absolute;
+	height: 4px;
+	width: 2px;
+	background: #c70000;
+	bottom: 3px;
+	left: 11px;
+}
+
+#oneImg{
+  position: relative;
+  margin: 0 auto;
+}
+
+#boxs{
+  height: 300px;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+
+.Cards{
+  display: flex;
+  box-shadow: 0px 2px 7px rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  margin-bottom: 69px;
+  border: 2px solid black;
+  height: 60px;
+  width: 300px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.card{
+  display: inline-flex;
+  width: 190px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.card span{
+  display: inline-flex;
+  font-style: normal;
+  font-size: 16px;
+  color: black;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/*page 2*/
+
+#Aside > section{
+  width: 450px;
+  height: 100px;
+  border-bottom: 1.5px solid black;
+  border-right: 1.5px solid black;
+  font-size: 25px;
+  background-image: url("../images/right.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+#Aside > section > span{
+  margin-top: 70px;
+  margin-left: 15px;
+}
+
+main{
+  position: relative;
+}
+
+h4{
+  position: absolute;
+  margin-top: 28px;
+  margin-left: 40px;
+  font-size: 20px;
+  text-decoration: underline ;
+}
+
+h2{
+  position: absolute;
+  top: -45px;
+  left: 240px;
+  font-size: 48px;
+  text-decoration: underline;
+}
+
+section{
+  display: flex;
+}
+
+
+#insideNav > section{
+  width: 650px;
+  height: 100px;
+  border-bottom: 1.5px solid black;
+  font-size: 25px;
+  background-image: url("../images/arrow-down.png") ;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+#insideNav > section:nth-child(3){
+  background-image: none;
+}
+
+#devicesOne{
+  position: relative;
+}
+
+#devicesOne span{
+  position: absolute;
+  top: 32px;
+  left: 143px;
+}
+
+#links{
+  position: absolute;
+  top: 32px;
+  left: 375px;
+}
+
+#devicesOne a{
+  background-repeat: no-repeat;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  margin-left: 20px;
+}
+
+#walk{
+  background-image: url("../images/walk.jpeg") ;
+}
+
+#pencil{
+  background-image: url("../images/pencil.jpeg") ;
+}
+
+#delete{
+  background-image: url("../images/delete.jpeg") ;
+}
+
+#insideNav > section > img{
+  height: 50px;
+  width: 50px;
+  margin: auto 15px;
+}
+
+#insideNav > section > span{
+  margin: auto 15px;
+}
+
+#insideNav > section > button , #boxOne > a > button{
+  background-image: url("../images/plus.png");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: none;
+  margin-top: 40px;
+}
+
+article{
+  position: relative;
+  top: 102px;
+}
+
+/*FOTTER*/
+
+footer{
+  width: 100%;
+  height: 53px;
+  background-color: black;
+  color: rgb(209, 209, 209);
+  position: fixed;
+  bottom: 0px;
+}
+
+footer > span{
+  position: absolute;
+  margin-top: 30px;
+}
+
+/*--------------------------FormPage------------------*/
+
+
+p{
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#myForm{
+  text-align: center;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+#Warranty{
+  background: url("../images/camera.png") no-repeat 140px ;
+}
+
+label{
+  width: 300px;
+}
+
+/* Save buttun */
+
+#button1 {
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius:40px;
+  background: #fff;
+  border: 2px solid #1ECD97;
+  color: #1ECD97;
+  letter-spacing:1px;
+  transition: all 0.25s ease;
+  margin-top: 80px;
+  }
+  
+  #button1 font{
+    size:12px;
+  }
+  #button1:hover {
+    color:white;
+    background: #1ECD97;
+  }
+  
+  #button1:after {
+    content:"SUBMIT";
+  }
+
+  /*responsiv*/
+
+@media (max-width: 414px){
+
+  footer{
+    display: none;
+  }
+
+  header{
+    height: 80px;
+  }
+  
+  #eye{
+    left: 1px ;
+    top: 23px;
+  }
+  
+  #speaker{
+    left: 33px;
+    top: 13px;
+  }
+  
+  #logo{
+    background-image: url("../images/logo_med.jpeg");
+    margin-left: 80px;
+  }
+  
+  #ring{
+    top: 18px;
+    right: 33px;
+  }
+  
+  #face{
+    top: 28px;
+    right: -9px;
+  }
+
+  .Cards{
+    height: 60px;
+    width: 300px;
+    margin: 10px auto;
+  }
+
+  #boxs{
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  #oneImg{
+    height: 100px;
+    width: 350px;
+    margin-left: -71px;
+  }
+
+  #Aside{
+    display: none;
+  }
+
+  h4{
+    display: none;
+  }
+
+  h2{
+    font-size: 30px;
+    left: 136px;
+  }
+
+  #insideNav > section{
+    width: 366px;
+    height: 80px;
+  }
+
+  #insideNav > section > button , #boxOne > a > button{
+    margin-top: 26px;
+  }
+
+  #links{
+    left: 208px;
+  }
+
+  p > span:nth-child(1), p > span:nth-child(2){
+    display: none;
+  }
+
+  #Hambu{
+    background-image: url("../images/hamburger.jpeg");
+    background-repeat: no-repeat;
+    background-color: white;
+  } 
+}
