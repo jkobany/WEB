@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jonatna Kobany Form</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="includes/scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <a id="eye"></a>
+            <a id="speaker"></a>
+            <a id="ring"></a>
+            <a id="face"></a>
+            <a href="index.html" id="logo"></a>
+        </header>  
+
+        <div class="cont_breadcrumbs_3">
+            <ul>
+              <li><a href="index.html">My Devices</a></li>
+              <li><a href="devices.html">My Devices</a></li>
+              <li><a href="#">Add New Device</a></li>
+            </ul>            
+            </div>
+        <div id =wrapper>
+        <form  id = myForm action="devices.html" method = "get" >
+            <label> Name:
+                <input type = "text" name = "fullName" placeholder="Name">
+            </label>
+
+            <label>Buying Date:
+                <input type = "date" name = "buyingDate" >
+            </label><br><br>
+
+            
+            <label>Warranty:
+                <input id= "Warranty" type = "text" name = "Warranty" placeholder="Receipt_Electro.jpg">
+            </label>
+            <label>Ensured By:
+            <select id ="Ensured_by" name = "Ensured_by">
+            </select>
+            </label><br><br>
+
+            <label>Insurance end date:
+                <input type = "date" name = "Insurance_end_date" >
+            </label><br><br>
+
+            <span>Product maintenance alerts:</span><br><br>
+
+            <label class="container">SMS
+                <input type="checkbox" checked="checked" value="SMS">
+                <span class="checkmark"></span>
+            </label>
+              
+                <label class="container">Email
+                <input type="checkbox" value="Email">
+                <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">Notification
+                <input type="checkbox" value="Notification">
+                <span class="checkmark"></span>
+            </label><br><br>
+
+            <div>
+                <button id="button1"></button>
+            </div>
+
+        </div>
+    </form>
+    <footer>
+        <span> &copy; All rights reserved to Jonatan Kobany.</span>
+      </footer>
+      <script>(loadList());</script>
+    </body>
+</html>
+
